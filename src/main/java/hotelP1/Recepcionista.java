@@ -9,7 +9,6 @@ public class Recepcionista {
     Ingresoss ingresoss = new Ingresoss();
     LecturaDatos lecturaDatos = new LecturaDatos();
 
-
     public void mostrarEstadoHabitaciones(Hotel hotel) {
         String[][] habitaciones = hotel.getHabitaciones();
         int contEspacio = 0;
@@ -25,9 +24,8 @@ public class Recepcionista {
                 contEspacio++;
             }
         }
-        System.out.println("---------------------------");
+        System.out.println("---------------------------\n");
     }
-
 
     public void gestionarReservas(Hotel hotel) {
         boolean continuar = true;
@@ -51,7 +49,6 @@ public class Recepcionista {
             }
         }
     }
-
 
     public void hacerChecksOut(Hotel hotel) {
         boolean continuar = true;
@@ -80,5 +77,4 @@ public class Recepcionista {
         }
     }
 
-   
 }

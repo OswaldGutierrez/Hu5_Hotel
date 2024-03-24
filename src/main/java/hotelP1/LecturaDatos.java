@@ -33,7 +33,6 @@ public class LecturaDatos {
         return datoDouble;
     }
 
-
     public int leeryValidarInt(String mensaje) {
         int dato;
         do {
@@ -50,7 +49,6 @@ public class LecturaDatos {
         } while (dato <= 0);
         return dato;
     }
-    
     
     public int leerOpciones() {
         int dato;

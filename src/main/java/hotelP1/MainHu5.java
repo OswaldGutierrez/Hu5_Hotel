@@ -9,19 +9,15 @@ public class MainHu5 {
     public static void main(String[] args) {
         Hotel hotel = new Hotel();
         Recepcionista recepcionista = new Recepcionista();
-        FinTurno finTurno = new FinTurno();
 
         
         System.out.println("Bienvenido al Hotel Hilton. \nEl Hotel Hilton cuenta con 2 pisos y 5 habitaciones en cada uno de ellos.");
-
         recepcionista.mostrarEstadoHabitaciones(hotel);
-        System.out.println();
         recepcionista.gestionarReservas(hotel);
-        System.out.println();
         recepcionista.mostrarEstadoHabitaciones(hotel);
-        System.out.println();
         recepcionista.hacerChecksOut(hotel);
-        finTurno.entregarTurno();
+        
+        System.out.println("Como recepcionista, muestro el informe del listado de las habitaciones ocupadas y disponibles.");
         recepcionista.mostrarEstadoHabitaciones(hotel);
 
         

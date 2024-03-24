@@ -8,11 +8,7 @@ package hotelP1;
 public class Ingresoss {
     LecturaDatos lecturaDatos = new LecturaDatos();
 
-    public double totalAcumulado = 0;
-
-    public double getTotalAcumulado() {
-        return totalAcumulado;
-    }
+    private double totalAcumulado = 0;
 
     public void procesarPago(int piso) {
         double costoHabitacion = (piso == 1) ? 375000 : 415000;
