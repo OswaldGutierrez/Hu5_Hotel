@@ -10,23 +10,6 @@ public class LecturaDatos {
     
     Scanner entrada = new Scanner (System.in);
     
-    public int leeryValidarInt(String mensaje) {
-        int dato;
-        do {
-            System.out.print(mensaje + "\n");
-            while (!entrada.hasNextInt()) {
-                System.out.println("Valor no válido");
-                entrada.next();
-                System.out.print("Ingrese un valor válido. \n");
-            }
-            dato = entrada.nextInt();
-            if(dato < 0){
-                System.out.println("El número debe ser positivo");
-            }
-        } while (dato <= 0);
-        return dato;
-    }
-    
     public int leerOpciones() {
         int dato;
         do {
