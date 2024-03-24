@@ -8,17 +8,8 @@ public class Hotel {
     LecturaDatos lecturaDatos = new LecturaDatos();
 
     private final String[][] habitaciones;
-
     private int piso;
     private int numero;
-
-    public int getPiso() {
-        return piso;
-    }
-
-    public int getNumero() {
-        return piso;
-    }
 
     public String[][] getHabitaciones() {
         return habitaciones;
@@ -26,9 +17,9 @@ public class Hotel {
 
     public Hotel() {
         this.habitaciones = new String[2][5];
-        for (String[] piso : habitaciones) {
-            for (int habitacion = 0; habitacion < piso.length; habitacion++) {
-                piso[habitacion] = "Disponible";
+        for (String[] pisosHab : habitaciones) {
+            for (int habitacion = 0; habitacion < pisosHab.length; habitacion++) {
+                pisosHab[habitacion] = "Disponible";
             }
         }
     }

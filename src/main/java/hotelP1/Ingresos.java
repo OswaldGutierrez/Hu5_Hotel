@@ -5,7 +5,7 @@ package hotelP1;
  * @author Oswald David
  */
 
-public class Ingresoss {
+public class Ingresos {
     LecturaDatos lecturaDatos = new LecturaDatos();
 
     private double totalAcumulado = 0;
@@ -14,7 +14,6 @@ public class Ingresoss {
         double costoHabitacion = (piso == 1) ? 375000 : 415000;
         
         System.out.println("\nEl costo de la habitación en el piso " + piso + " es: $" + costoHabitacion);
-        
         System.out.println("Seleccione el método de pago:");
         System.out.println("\t1. Transferencia");
         System.out.println("\t2. Efectivo");

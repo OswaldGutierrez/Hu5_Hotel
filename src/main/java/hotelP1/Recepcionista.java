@@ -6,7 +6,7 @@ package hotelP1;
  */
 
 public class Recepcionista {
-    Ingresoss ingresoss = new Ingresoss();
+    Ingresos ingresos = new Ingresos();
     LecturaDatos lecturaDatos = new LecturaDatos();
 
     public void mostrarEstadoHabitaciones(Hotel hotel) {
@@ -65,7 +65,7 @@ public class Recepcionista {
                     System.out.println("Ok, vemos que va de salida.\n");
                     int pisoEntregado = hotel.dejarHabitacionPrueba();
                     if (pisoEntregado != -1) {
-                        ingresoss.procesarPago(pisoEntregado);
+                        ingresos.procesarPago(pisoEntregado);
                     }
                 }
                 case 2 -> {
