@@ -17,13 +17,12 @@ public class Ingresoss {
     public void procesarPago(int piso) {
         double costoHabitacion = (piso == 1) ? 375000 : 415000;
         
-        System.out.println("\tEl costo de la habitación en el piso " + piso + " es: $" + costoHabitacion);
+        System.out.println("\nEl costo de la habitación en el piso " + piso + " es: $" + costoHabitacion);
         
-        System.out.println("\tSeleccione el método de pago:");
-        System.out.println("1. Transferencia");
-        System.out.println("2. Efectivo");
-        System.out.println("3. Tarjeta \t (Este método cuenta con un recargo del 10 porciento del costo de la habitación.)");
-        System.out.println();
+        System.out.println("Seleccione el método de pago:");
+        System.out.println("\t1. Transferencia");
+        System.out.println("\t2. Efectivo");
+        System.out.println("\t3. Tarjeta \t (Este método cuenta con un recargo del 10 porciento del costo de la habitación.)\n");
         
         int opcionPago = lecturaDatos.leerPagos();
 
@@ -38,7 +37,7 @@ public class Ingresoss {
         }
 
         totalAcumulado += costoHabitacion;
-        System.out.println("Total acumulado hasta el momento: $" + totalAcumulado);
+        System.out.println("Total acumulado hasta el momento: $" + totalAcumulado + "\n");
     }
 }
 

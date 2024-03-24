@@ -12,7 +12,7 @@ public class MainHu5 {
         FinTurno finTurno = new FinTurno();
 
         
-        System.out.println("Bienvenido al Hotel Hilton. \nEl Hotel Hilton cuenta con 2 pisos y 5 habitaciones en cada uno de ellos. \n");
+        System.out.println("Bienvenido al Hotel Hilton. \nEl Hotel Hilton cuenta con 2 pisos y 5 habitaciones en cada uno de ellos.");
 
         recepcionista.mostrarEstadoHabitaciones(hotel);
         System.out.println();
