@@ -4,10 +4,8 @@ package hotelP1;
  *
  * @author Oswald David
  */
-import java.util.Scanner;
 
 public class Recepcionista {
-    private final Scanner scanner = new Scanner(System.in);
     Ingresoss ingresoss = new Ingresoss();
     LecturaDatos lecturaDatos = new LecturaDatos();
 

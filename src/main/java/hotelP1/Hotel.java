@@ -7,7 +7,7 @@ package hotelP1;
 public class Hotel {
     LecturaDatos lecturaDatos = new LecturaDatos();
 
-    private String[][] habitaciones;
+    private final String[][] habitaciones;
 
     private int piso;
     private int numero;
@@ -26,7 +26,6 @@ public class Hotel {
 
     public Hotel() {
         this.habitaciones = new String[2][5];
-        // Inicializar todas las habitaciones como disponibles
         for (String[] piso : habitaciones) {
             for (int habitacion = 0; habitacion < piso.length; habitacion++) {
                 piso[habitacion] = "Disponible";

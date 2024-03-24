@@ -8,7 +8,7 @@ package hotelP1;
 public class Ingresoss {
     LecturaDatos lecturaDatos = new LecturaDatos();
 
-    private double totalAcumulado = 0;
+    public double totalAcumulado = 0;
 
     public double getTotalAcumulado() {
         return totalAcumulado;
